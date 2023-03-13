@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Magnifying Glass</title>
+</head>
+
+<body>
+    <div id="header">
+        <button id="toggle" title="Color picker" onclick="toggleSelect()">
+            <img src="IconColorPicker.svg">
+        </button>
+        <div id="color_info">
+            <div>
+                <div>Selected</div>
+                <div id="selected_color_code">#FFFFFF</div>
+                <div id="selected_color"></div>
+            </div>
+            <div>
+                <div>Current</div>
+                <div id="current_color_code">#FFFFFF</div>
+                <div id="current_color"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
